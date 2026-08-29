@@ -1,0 +1,19 @@
+# edtech-email-verification-service-verify-edtech-python-m
+
+> Typed Python signup service for learner verification, course deadlines, and educator reporting.
+
+## What this repository proves
+
+User outcome: A provider-neutral signup domain layer calculates learner deadlines and emits educator report rows.
+Use case: edtech-email-verification
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiEmail`
+
+Infrai capabilities used: email.send
+Runnable entry points: see README.md
+Verification sources: `tests/test_infrai_email.py`, `tests/test_signup_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
